@@ -1,0 +1,85 @@
+/* #about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    padding-top: 3em;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    opacity: 0.8;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Red Hat Mono', monospace;
+    padding-left: 150px;
+    padding-right: 150px;
+} */
+
+#about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    opacity: 0.8;
+    max-width: 700px;
+}
+
+#about-section p {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+#about-heading {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+#about-heading h1 {
+    color: white;
+    text-shadow: 0px 0px 12px cyan;
+}
+
+#horizontal-line {
+    border-bottom: 1px solid rgb(255, 255, 255);
+    width: 5%;
+    margin: auto 0;
+    margin-right: 10px;
+}
+
+#horizontal-line2 {
+    border-bottom: 1px solid rgb(255, 255, 255);
+    width: 40%;
+    margin: auto;
+    margin-left: 10px;
+}
+
+#about-content p {
+    margin-top: 20px;
+    max-width: 600px;
+}
+
+#technologies ul {
+    list-style: none;
+    columns: 2;
+    margin-top: 20px;
+}
+
+#technologies li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+#technologies li::before {
+    content: "• ";
+    color: #f3e3a4;
+}
+
+@media only screen and (max-width: 1200px) {
+    #about-section p {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,192 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static 'images/portfolio-icon.png' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+    <link rel="stylesheet" href="{% static 'css/experience.css' %}">
+    <link rel="stylesheet" href="{% static 'css/projects.css' %}">
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Red+Hat+Mono&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Daniel Lee</title>
+</head>
+<body>
+    <div class="container">
+        <header class="navbar">
+            <div id="logo-container">
+                <a href="#index-section" id="logo-link"><h1 id="logo">DL</h1></a>
+            </div>
+            <div id="navbar-sections">
+                <a href="#about-section" alt="">About</a>
+                <a href="#experience-section" alt="">Experience</a>
+                <a href="#projects-section" alt="">Projects</a>
+                <a href="#contact-section" alt="">Contact</a>
+            </div>
+            <div id="hamburger-menu" onclick="menuFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div id="dropdown-menu">
+                <div id="dropdown-menuLinks">
+                    <a href="#about-section" alt="" id="aboutLink">About</a>
+                    <a href="#experience-section" alt="" id="experienceLink">Experience</a>
+                    <a href="#projects-section" alt="" id="projectsLink">Projects</a>
+                    <a href="#contact-section" alt="" id="contactLink">Contact</a>
+                    <div id="dropdown-menuSocials">
+                        <a href="https://github.com/dlee3458" id="github2" target="__blank"><span><img src="{% static 'images/github.svg' %}"></span></a>
+                        <a href="https://www.linkedin.com/in/dlee26/" id="linkedin2" target="__blank"><span><img src="{% static 'images/linkedin.svg' %}" alt=""></span></a>
+                        <a href="{% static 'pdfs/DanielLee.pdf' %}" target="__blank"" id="cv2"><span><img src="{% static 'images/cv.svg' %}" alt=""></span></a>
+                    </div>
+                    <a href="mailto:dlee3458@gmail.com" id="email2">dlee3458@gmail.com</a>
+                </div>
+            </div>
+        </header>
+        <div id="left">
+            <div id="left-content">
+                <div id="vertical-line"></div>
+                <a href="https://github.com/dlee3458" id="github" target="__blank"><span><img src="{% static 'images/github.svg' %}"></span></a>
+                <a href="https://www.linkedin.com/in/dlee26/" id="linkedin" target="__blank"><span><img src="{% static 'images/linkedin.svg' %}" alt=""></span></a>
+                <a href="{% static 'pdfs/DanielLee.pdf' %}" target="__blank" id="cv"><span><img src="{% static 'images/cv.svg' %}" alt=""></span></a>
+            </div>
+        </div>
+        <div id="right">
+            <div id="right-content">
+                <a href="mailto:dlee3458@gmail.com" id="email">dlee3458@gmail.com</a>
+                <div id="vertical-line"></div>
+            </div>
+        </div>
+        <main class="main-content">
+            <section id="index-section">
+                <h3>Hi, my name is</h3>
+                <h1 id="name">Daniel Lee.</h1>
+                <h1 id="description">I build all sorts of things.</h1>
+                <p>I’m a software engineer experienced in web development, desktop scripting, and data analysis. I'm looking for opportunities where I can improve and expand my skillsets.</p>
+                <a id="resume-button" href="{% static 'pdfs/DanielLee.pdf' %}" target="__blank">Resume</a>
+            </section>
+            <section id="about-section">
+                <div id="about-heading">
+                    <div id="horizontal-line"></div>
+                    <h1>About Me</h1>
+                    <div id="horizontal-line2"></div>
+                </div>
+                <p>
+                    Hi there! My name is Daniel and I enjoy coding all sorts of things, whether it's building a web app or even a script to automate processes.
+                    I discovered my passion for coding after creating my first "Hello World" script. It may be the simplest script to create, but
+                    for the first time in my life, I made something from scratch. Then and there, I realized the power of coding and the boundless possibilities it brings.  
+                </p>
+                <br>
+                <p>
+                    I'm currently working at a logistics company called Expeditors as a software developer. My main roles are to create reports using Transact-SQL, create scripts
+                    to automate lengthy processes, and develop web apps for internal usage. 
+                </p>
+                <br>
+                <p>
+                    Outside of work, I'm always trying to better myself as a software engineer by learning best practices and new technologies. I hope to find a team where I can
+                    hone my skills and work on interesting projects together!
+                </p>
+                <br>
+                <div id="technologies">
+                    <p>Some techologies I've worked with:</p>
+                    <ul>
+                        <li>Django</li>
+                        <li>Python</li>
+                        <li>Pascal</li>
+                        <li>VBA</li>
+                        <li>SQL</li>
+                        <li>Node.js</li>
+                        <li>React</li>
+                        <li>Javascript</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="experience-section">
+                <div id="experience-heading">
+                    <div id="horizontal-line"></div>
+                    <h1>Experience</h1>
+                    <div id="horizontal-line2"></div>
+                </div>
+                <div id="jobs">
+                    <div class="timeline">
+                        <div class="outer">
+                            <div class="card">
+                                <div class="info">
+                                    <h3 class="title">Software Developer <span style="color:#f3e3a4">@ Expeditors</span></h3>
+                                    <div id="job">
+                                        <p>July 2021 - Present</p>
+                                        <ul>
+                                            <li>Plan and create solutions for stakeholders</li>
+                                            <li>Automate lengthy, manual processes by utilizing RPA and Python</li>
+                                            <li>Develop SQL procedures to facilitate data integration and reporting</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="info">
+                                <h3 class="title">Full Stack Developer Intern <span style="color:#f3e3a4">@ Earnify</span></h3>
+                                <div id="job">
+                                    <p>March 2021 - May 2021</p>
+                                    <ul>
+                                        <li>Utilized the MERN stack for the front-end and back-end</li>
+                                        <li>Modified and created components for the front-end</li>
+                                        <li>Created and connected APIs using REST standards</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="projects-section">
+                <div id="projects-heading">
+                    <div id="horizontal-line"></div>
+                    <h1>Projects</h1>
+                    <div id="horizontal-line2"></div>
+                </div>
+                <div id="projects">
+                    <div class="project-container">
+                        <div class="layer"></div>
+                        <img src="{% static 'images/covid_project.png' %}" alt="" id="covid_project">
+                        <div id="project-details">
+                            <h3>Covid-19 Tracker</h3>
+                            <p>A Covid-19 dashboard that displays the latest data and news.</p>
+                            <a href="http://coronaviruspandemic.herokuapp.com/" target="__blank"><img src="{% static 'images/link_icon.png' %}" alt=""></a>
+                            <a href="https://github.com/dlee3458/coronavirus-pandemic" target="__blank"><img src="{% static 'images/github.svg' %}" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="project-container">
+                        <div class="layer"></div>
+                        <img src="{% static 'images/spacehut.png' %}" alt="" id="covid_project">
+                        <div id="project-details">
+                            <h3>SpaceHut</h3>
+                            <p>A forum where users can discuss and share anything related to space.</p>
+                            <a href="http://spacehut.herokuapp.com/" target="__blank"><img src="{% static 'images/link_icon.png' %}" alt=""></a>
+                            <a href="https://github.com/dlee3458/spacehut" target="__blank"><img src="{% static 'images/github.svg' %}" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact-section">
+                <div id="contact-heading">
+                    <h1>Let's Get in Touch!</h1>
+                </div>
+                <p>I'm currently seeking new opportunities so please feel free to reach out and I'll get back to you as soon as possible!</p>
+                <a id="contact-button" href="mailto:dlee3458@gmail.com">Contact me</a>
+            </section>
+        </main>
+    </div>
+    <canvas class="webgl"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.js" integrity="sha512-NLtnLBS9Q2w7GKK9rKxdtgL7rA7CAS85uC/0xd9im4J/yOL4F9ZVlv634NAM7run8hz3wI2GabaA6vv8vJtHiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="{% static 'js/background.js' %}"></script>
+    <script src="{% static 'js/navbar.js' %}"></script>
+</body>
+</html>

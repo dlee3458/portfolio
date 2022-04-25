@@ -1,0 +1,105 @@
+#experience-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    opacity: 0.8;
+    max-width: 700px;
+}
+
+#experience-section p {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+#experience-heading {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#experience-heading h1 {
+    color: white;
+    text-shadow: 0px 0px 12px cyan;
+}
+
+#job ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+#job li {
+    margin-bottom: 10px;
+    text-indent: -1.2em;
+    margin-left: 1.2em;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+#job li::before {
+    content: "• ";
+    color: #f3e3a4;
+}
+
+#job p {
+    margin-top: 5px;
+}
+
+.timeline {
+    background: var(--primary-color);
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  /* Outer Layer with the timeline border */
+  .outer {
+    border-left: 2px solid white;
+  }
+  
+  /* Card container */
+  .card {
+    position: relative;
+    margin: 0 0 20px 20px;
+    padding: 10px;
+    /* background: black; */
+    color: white;
+    border-radius: 8px;
+    max-width: 100%;
+  }
+  
+  /* Information about the timeline */
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Title of the card */
+  .title {
+    color: white;
+    position: relative;
+  }
+  
+  /* Timeline dot  */
+  .title::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 999px;
+    left: -39px;
+    border: 3px solid rgb(0, 212, 212);
+  }
+
+  @media only screen and (max-width: 1200px) {
+    #experience-section p {
+      font-size: 16px;
+    }
+
+    #job li {
+      font-size: 16px;
+  }   
+}
